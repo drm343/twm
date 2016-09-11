@@ -30,7 +30,7 @@ dist_rc_DATA = system.twmrc
 AM_CPPFLAGS =							\
 	-DXVENDORNAME=\"The\ X.Org\ Foundation\"		\
 	-DXORG_RELEASE=\"Release\ $(VERSION)\"			\
-	-DSYSTEM_INIT_FILE=\"${datadir}/X11/twm/system.twmrc\"
+	-DSYSTEM_INIT_FILE=\"${rcdir}/system.twmrc\"
 
 AM_CFLAGS = $(TWM_CFLAGS)
 twm_LDADD = $(TWM_LIBS)
