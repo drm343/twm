@@ -403,7 +403,7 @@ InsertRGBColormap (Atom a, XStandardColormap *maps, int nmaps, Bool replace)
     }
 
     if (replace) {			/* just update contents */
-	if (sc->maps) XFree (maps);
+	if (sc->maps) XFree (sc->maps);
 	if (sc == Scr->StdCmapInfo.mru) Scr->StdCmapInfo.mru = NULL;
     } else {				/* else appending */
 	sc->next = NULL;
