@@ -400,6 +400,7 @@ InsertRGBColormap (Atom a, XStandardColormap *maps, int nmaps, Bool replace)
 		     ProgramName, (unsigned long)sizeof (StdCmap));
 	    return;
 	}
+	replace = False;
     }
 
     if (replace) {			/* just update contents */
